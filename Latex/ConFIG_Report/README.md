@@ -5,14 +5,14 @@
 ## 文件说明
 
 ```text
-config_report.tex      主 LaTeX 文件，由 tools/build_latex_report.py 生成
+config_report.tex      主 LaTeX 文件，由 tools/Report/build_latex_report.py 生成
 README.md              本说明文件
 ```
 
-报告中的图片来自仓库根目录下的 `report_assets/`：
+报告中的图片来自仓库根目录下的 `report_assets/Report/`：
 
 ```text
-../../report_assets/
+../../report_assets/Report/
 ```
 
 ## 生成 LaTeX 文件
@@ -20,13 +20,13 @@ README.md              本说明文件
 在仓库根目录运行：
 
 ```bash
-python3 tools/build_latex_report.py
+python3 tools/Report/build_latex_report.py
 ```
 
 该命令会读取：
 
 ```text
-组合优化与凸优化阅读报告-ConFIG.md
+Latex/ConFIG_Report/组合优化与凸优化阅读报告-ConFIG.md
 ```
 
 并生成：
@@ -67,5 +67,5 @@ xdvipdfmx -o config_report.pdf config_report.xdv
 若重新生成了实验图表或修改了 Markdown 正文，需要先在仓库根目录重新运行：
 
 ```bash
-python3 tools/build_latex_report.py
+python3 tools/Report/build_latex_report.py
 ```

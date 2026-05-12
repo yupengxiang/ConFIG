@@ -1,0 +1,4 @@
+matrix,method,info,iterations,final_residual,solution_error
+SPD tridiagonal,CG,0,40,0,3.757044554e-11
+SPD tridiagonal,GMRES,0,1424,9.964078283e-11,5.679386736e-07
+Nonsymmetric tridiagonal,GMRES,0,41,7.894496493e-11,1.067782571e-09

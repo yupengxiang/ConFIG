@@ -1,0 +1,2 @@
+method,iterations,lambda,rho,final_objective,final_primal_residual,final_dual_residual,final_sparsity,relative_error,runtime_sec
+ADMM-Lasso,300,0.08,1.0,8.7276159964e-01,1.3617384025e-16,0.0000000000e+00,0.860000,5.3861605903e-02,0.009692

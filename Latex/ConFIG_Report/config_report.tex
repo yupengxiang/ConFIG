@@ -22,7 +22,7 @@
     citecolor=blue,
     urlcolor=blue
 }
-\graphicspath{{../../}{../../report_assets/}}
+\graphicspath{{../../}{../../report_assets/Report/}}
 
 \title{ConFIG 无冲突梯度方法在物理信息神经网络训练中的优化建模与实验分析}
 \author{}
@@ -322,7 +322,7 @@ u(x,0)=-\sin(\pi x),
 \endgroup
 
 
-本次实验采用与官方 Burgers 配置一致的 30000 epochs 长训练，并对每种方法运行三个随机种子。训练使用 \texttt{tools/run\_burgers\_experiments.py} 并行调度四种优化方法，结果由 \texttt{tools/analyze\_burgers\_results.py} 统一读取 TensorBoard 记录、加载模型权重并在真实仿真数据 \texttt{simulation\_data.npy} 上重新计算 MSE。这样可以避免只根据训练终端输出判断效果，也能报告均值和标准差。
+本次实验采用与官方 Burgers 配置一致的 30000 epochs 长训练，并对每种方法运行三个随机种子。训练使用 \texttt{tools/Report/run\_burgers\_experiments.py} 并行调度四种优化方法，结果由 \texttt{tools/Report/analyze\_burgers\_results.py} 统一读取 TensorBoard 记录、加载模型权重并在真实仿真数据 \texttt{simulation\_data.npy} 上重新计算 MSE。这样可以避免只根据训练终端输出判断效果，也能报告均值和标准差。
 
 
 \subsection{对比方法与 ConFIG 实现机制}
@@ -354,7 +354,7 @@ g_{ConFIG}=\left(\sum_{i=1}^{m}g_i^\top g_u\right)g_u,
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.92\textwidth]{../../report_assets/burgers_validation_loss.png}
+\includegraphics[width=0.92\textwidth]{../../report_assets/Report/burgers_validation_loss.png}
 \caption{Burgers PINN validation loss}
 \end{figure}
 
@@ -367,7 +367,7 @@ g_{ConFIG}=\left(\sum_{i=1}^{m}g_i^\top g_u\right)g_u,
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.92\textwidth]{../../report_assets/burgers_predictions_errors.png}
+\includegraphics[width=0.92\textwidth]{../../report_assets/Report/burgers_predictions_errors.png}
 \caption{Burgers predictions and errors}
 \end{figure}
 
@@ -380,7 +380,7 @@ g_{ConFIG}=\left(\sum_{i=1}^{m}g_i^\top g_u\right)g_u,
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.92\textwidth]{../../report_assets/burgers_reference_solution.png}
+\includegraphics[width=0.92\textwidth]{../../report_assets/Report/burgers_reference_solution.png}
 \caption{Burgers reference solution}
 \end{figure}
 

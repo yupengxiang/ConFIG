@@ -1,0 +1,1927 @@
+{
+  "Standard Adam": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/standard_30000_exp2_full/2026-05-09-18_47_27",
+        "final_validation_loss": 0.0001729786890791729,
+        "best_validation_loss": 0.00015256104234140366,
+        "final_training_loss": 6.318923988146707e-05,
+        "training_speed_s_per_iter": 0.01348,
+        "run_test_mse": 0.00017297867452725768,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/standard_30000_exp2_full/2026-05-09-18_58_17",
+        "final_validation_loss": 0.0001522245438536629,
+        "best_validation_loss": 0.00013832711556460708,
+        "final_training_loss": 6.612564175156876e-05,
+        "training_speed_s_per_iter": 0.01347,
+        "run_test_mse": 0.00015222455840557814,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/standard_30000_exp2_full/2026-05-09-19_09_05",
+        "final_validation_loss": 0.00017878133803606033,
+        "best_validation_loss": 0.00014859996736049652,
+        "final_training_loss": 0.00014033076877240092,
+        "training_speed_s_per_iter": 0.01322,
+        "run_test_mse": 0.0001787813234841451,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.00016799485698963204,
+        "std": 1.1400139356870667e-05,
+        "min": 0.0001522245438536629,
+        "max": 0.00017878133803606033
+      },
+      "best_validation_loss": {
+        "mean": 0.00014649604175550243,
+        "std": 5.998391177936186e-06,
+        "min": 0.00013832711556460708,
+        "max": 0.00015256104234140366
+      },
+      "final_training_loss": {
+        "mean": 8.988188346847892e-05,
+        "std": 3.569288570842367e-05,
+        "min": 6.318923988146707e-05,
+        "max": 0.00014033076877240092
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.01339,
+        "std": 0.00012027745701779106,
+        "min": 0.01322,
+        "max": 0.01348
+      },
+      "run_test_mse": {
+        "mean": 0.00016799485213899365,
+        "std": 1.1400125936669002e-05,
+        "min": 0.00015222455840557814,
+        "max": 0.0001787813234841451
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/standard_30000_exp2_full/2026-05-09-18_58_17",
+      "final_validation_loss": 0.0001522245438536629,
+      "best_validation_loss": 0.00013832711556460708,
+      "final_training_loss": 6.612564175156876e-05,
+      "training_speed_s_per_iter": 0.01347,
+      "run_test_mse": 0.00015222455840557814,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 6.09444068686571e-05,
+      "final_sample_boundary_initial_loss": 9.150272489932831e-06,
+      "final_sample_grad_cosine_internal_vs_bi": -0.0581374354660511,
+      "final_sample_grad_dot_internal_vs_bi": -0.00016269972547888756
+    }
+  },
+  "ConFIG": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/config_30000_exp2_full/2026-05-09-18_47_27",
+        "final_validation_loss": 0.00015605126100126654,
+        "best_validation_loss": 0.00013103123637847602,
+        "final_training_loss": 0.0001809820532798767,
+        "training_speed_s_per_iter": 0.02339,
+        "run_test_mse": 0.00015605126100126654,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/config_30000_exp2_full/2026-05-09-19_00_11",
+        "final_validation_loss": 0.0001609291066415608,
+        "best_validation_loss": 0.00013224693248048425,
+        "final_training_loss": 9.552329720463604e-05,
+        "training_speed_s_per_iter": 0.02315,
+        "run_test_mse": 0.00016092909208964556,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/config_30000_exp2_full/2026-05-09-19_12_47",
+        "final_validation_loss": 0.00014849928265903145,
+        "best_validation_loss": 0.0001320034498348832,
+        "final_training_loss": 0.00011019989324267954,
+        "training_speed_s_per_iter": 0.02252,
+        "run_test_mse": 0.00014849929721094668,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.00015515988343395293,
+        "std": 5.113449359926419e-06,
+        "min": 0.00014849928265903145,
+        "max": 0.0001609291066415608
+      },
+      "best_validation_loss": {
+        "mean": 0.0001317605395646145,
+        "std": 5.251877776319715e-07,
+        "min": 0.00013103123637847602,
+        "max": 0.00013224693248048425
+      },
+      "final_training_loss": {
+        "mean": 0.00012890174790906409,
+        "std": 3.731058181851183e-05,
+        "min": 9.552329720463604e-05,
+        "max": 0.0001809820532798767
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.02302,
+        "std": 0.000366878726556884,
+        "min": 0.02252,
+        "max": 0.02339
+      },
+      "run_test_mse": {
+        "mean": 0.00015515988343395293,
+        "std": 5.11343756894614e-06,
+        "min": 0.00014849929721094668,
+        "max": 0.00016092909208964556
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/config_30000_exp2_full/2026-05-09-19_12_47",
+      "final_validation_loss": 0.00014849928265903145,
+      "best_validation_loss": 0.0001320034498348832,
+      "final_training_loss": 0.00011019989324267954,
+      "training_speed_s_per_iter": 0.02252,
+      "run_test_mse": 0.00014849929721094668,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 8.461999823339283e-05,
+      "final_sample_boundary_initial_loss": 3.816128810285591e-06,
+      "final_sample_grad_cosine_internal_vs_bi": -0.26201215386390686,
+      "final_sample_grad_dot_internal_vs_bi": -0.001011737622320652
+    }
+  },
+  "M-ConFIG": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/mconfig_30000_exp2_full/2026-05-09-18_47_27",
+        "final_validation_loss": 0.00015338766388595104,
+        "best_validation_loss": 0.00012215178867336363,
+        "final_training_loss": 0.00010807272337842733,
+        "training_speed_s_per_iter": 0.01349,
+        "run_test_mse": 0.00015338766388595104,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/mconfig_30000_exp2_full/2026-05-09-18_55_07",
+        "final_validation_loss": 0.0001511432637926191,
+        "best_validation_loss": 0.00012996557052247226,
+        "final_training_loss": 0.00016159529332071543,
+        "training_speed_s_per_iter": 0.01366,
+        "run_test_mse": 0.0001511432637926191,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/mconfig_30000_exp2_full/2026-05-09-19_02_52",
+        "final_validation_loss": 0.00016689542098902166,
+        "best_validation_loss": 0.00013191052130423486,
+        "final_training_loss": 0.00016375853738281876,
+        "training_speed_s_per_iter": 0.01304,
+        "run_test_mse": 0.00016689542098902166,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.0001571421162225306,
+        "std": 6.957228775203527e-06,
+        "min": 0.0001511432637926191,
+        "max": 0.00016689542098902166
+      },
+      "best_validation_loss": {
+        "mean": 0.00012800929350002357,
+        "std": 4.217304074218367e-06,
+        "min": 0.00012215178867336363,
+        "max": 0.00013191052130423486
+      },
+      "final_training_loss": {
+        "mean": 0.0001444755180273205,
+        "std": 2.5755808405162652e-05,
+        "min": 0.00010807272337842733,
+        "max": 0.00016375853738281876
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.013396666666666668,
+        "std": 0.000261576417557513,
+        "min": 0.01304,
+        "max": 0.01366
+      },
+      "run_test_mse": {
+        "mean": 0.0001571421162225306,
+        "std": 6.957228775203527e-06,
+        "min": 0.0001511432637926191,
+        "max": 0.00016689542098902166
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/mconfig_30000_exp2_full/2026-05-09-18_55_07",
+      "final_validation_loss": 0.0001511432637926191,
+      "best_validation_loss": 0.00012996557052247226,
+      "final_training_loss": 0.00016159529332071543,
+      "training_speed_s_per_iter": 0.01366,
+      "run_test_mse": 0.0001511432637926191,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 0.00014977560203988105,
+      "final_sample_boundary_initial_loss": 3.7415559290820966e-06,
+      "final_sample_grad_cosine_internal_vs_bi": 0.6343553066253662,
+      "final_sample_grad_dot_internal_vs_bi": 0.0018994680140167475
+    }
+  },
+  "ASGO": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_30000_exp2_full/2026-05-09-18_47_27",
+        "final_validation_loss": 0.0002714780275709927,
+        "best_validation_loss": 0.00012172939023002982,
+        "final_training_loss": 0.0008055972866714001,
+        "training_speed_s_per_iter": 0.04444,
+        "run_test_mse": 0.00027147805667482316,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_30000_exp2_full/2026-05-09-19_10_45",
+        "final_validation_loss": 0.00028792399098165333,
+        "best_validation_loss": 0.00012031115329591557,
+        "final_training_loss": 0.001653523650020361,
+        "training_speed_s_per_iter": 0.04266,
+        "run_test_mse": 0.00028792399098165333,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_30000_exp2_full/2026-05-09-19_33_08",
+        "final_validation_loss": 0.0002221937756985426,
+        "best_validation_loss": 0.00012659859203267843,
+        "final_training_loss": 0.0005323780933395028,
+        "training_speed_s_per_iter": 0.03609,
+        "run_test_mse": 0.00022219380480237305,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.0002605319314170629,
+        "std": 2.7928218299172244e-05,
+        "min": 0.0002221937756985426,
+        "max": 0.00028792399098165333
+      },
+      "best_validation_loss": {
+        "mean": 0.0001228797118528746,
+        "std": 2.692632088264159e-06,
+        "min": 0.00012031115329591557,
+        "max": 0.00012659859203267843
+      },
+      "final_training_loss": {
+        "mean": 0.0009971663433437545,
+        "std": 0.00047732998189376966,
+        "min": 0.0005323780933395028,
+        "max": 0.001653523650020361
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.041063333333333334,
+        "std": 0.003590973250929182,
+        "min": 0.03609,
+        "max": 0.04444
+      },
+      "run_test_mse": {
+        "mean": 0.0002605319508196165,
+        "std": 2.792820878413979e-05,
+        "min": 0.00022219380480237305,
+        "max": 0.00028792399098165333
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_30000_exp2_full/2026-05-09-19_33_08",
+      "final_validation_loss": 0.0002221937756985426,
+      "best_validation_loss": 0.00012659859203267843,
+      "final_training_loss": 0.0005323780933395028,
+      "training_speed_s_per_iter": 0.03609,
+      "run_test_mse": 0.00022219380480237305,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 0.0004603303677868098,
+      "final_sample_boundary_initial_loss": 2.3589172997162677e-05,
+      "final_sample_grad_cosine_internal_vs_bi": 0.5638427734375,
+      "final_sample_grad_dot_internal_vs_bi": 0.0022559119388461113
+    }
+  },
+  "Adam + L1": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/adam_l1_30000_exp2_full/2026-05-09-19_10_23",
+        "final_validation_loss": 0.00016788255015853792,
+        "best_validation_loss": 0.00015115192218218,
+        "final_training_loss": 0.0013270830968394876,
+        "training_speed_s_per_iter": 0.01476,
+        "run_test_mse": 0.0001678825356066227,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/adam_l1_30000_exp2_full/2026-05-09-19_21_57",
+        "final_validation_loss": 0.0001558752846904099,
+        "best_validation_loss": 0.000144732985063456,
+        "final_training_loss": 0.0013176588108763099,
+        "training_speed_s_per_iter": 0.01448,
+        "run_test_mse": 0.0001558752846904099,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/adam_l1_30000_exp2_full/2026-05-09-19_33_06",
+        "final_validation_loss": 0.00018277140043210238,
+        "best_validation_loss": 0.00015370165056083351,
+        "final_training_loss": 0.0014200791483744979,
+        "training_speed_s_per_iter": 0.01452,
+        "run_test_mse": 0.0001827714149840176,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.00016884307842701674,
+        "std": 1.100127936237538e-05,
+        "min": 0.0001558752846904099,
+        "max": 0.00018277140043210238
+      },
+      "best_validation_loss": {
+        "mean": 0.00014986218593548983,
+        "std": 3.7733102081578426e-06,
+        "min": 0.000144732985063456,
+        "max": 0.00015370165056083351
+      },
+      "final_training_loss": {
+        "mean": 0.0013549403520300984,
+        "std": 4.622049605515427e-05,
+        "min": 0.0013176588108763099,
+        "max": 0.0014200791483744979
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.014586666666666666,
+        "std": 0.0001236482466066097,
+        "min": 0.01448,
+        "max": 0.01476
+      },
+      "run_test_mse": {
+        "mean": 0.00016884307842701674,
+        "std": 1.100128592710987e-05,
+        "min": 0.0001558752846904099,
+        "max": 0.0001827714149840176
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/adam_l1_30000_exp2_full/2026-05-09-19_21_57",
+      "final_validation_loss": 0.0001558752846904099,
+      "best_validation_loss": 0.000144732985063456,
+      "final_training_loss": 0.0013176588108763099,
+      "training_speed_s_per_iter": 0.01448,
+      "run_test_mse": 0.0001558752846904099,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 5.918198803556152e-05,
+      "final_sample_boundary_initial_loss": 1.5757696019136347e-05,
+      "final_sample_grad_cosine_internal_vs_bi": 0.015018090605735779,
+      "final_sample_grad_dot_internal_vs_bi": 4.128422006033361e-05
+    }
+  },
+  "ASGO + L1": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_l1_30000_exp2_full/2026-05-09-19_19_49",
+        "final_validation_loss": 0.00021829981415066868,
+        "best_validation_loss": 0.00012848826008848846,
+        "final_training_loss": 0.0011619149008765817,
+        "training_speed_s_per_iter": 0.04398,
+        "run_test_mse": 0.00021829981415066868,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_l1_30000_exp2_full/2026-05-09-19_42_53",
+        "final_validation_loss": 0.00036021313280798495,
+        "best_validation_loss": 0.00013511355791706592,
+        "final_training_loss": 0.0020569816697388887,
+        "training_speed_s_per_iter": 0.02868,
+        "run_test_mse": 0.00036021313280798495,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_l1_30000_exp2_full/2026-05-09-19_58_06",
+        "final_validation_loss": 0.0007227458409033716,
+        "best_validation_loss": 0.00012932410754729062,
+        "final_training_loss": 0.002305232919752598,
+        "training_speed_s_per_iter": 0.0222,
+        "run_test_mse": 0.0007227458991110325,
+        "global_sparsity": 0.0,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 0,
+        "matrix_weight_nonzeros": 10150,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 0,
+            "nonzeros": 100,
+            "sparsity": 0.0
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 0,
+            "nonzeros": 2500,
+            "sparsity": 0.0
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 0,
+            "nonzeros": 50,
+            "sparsity": 0.0
+          }
+        },
+        "admm_primal_residual": null,
+        "admm_dual_residual": null
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.0004337529292873417,
+        "std": 0.00021240295780476016,
+        "min": 0.00021829981415066868,
+        "max": 0.0007227458409033716
+      },
+      "best_validation_loss": {
+        "mean": 0.000130975308517615,
+        "std": 2.946013273633643e-06,
+        "min": 0.00012848826008848846,
+        "max": 0.00013511355791706592
+      },
+      "final_training_loss": {
+        "mean": 0.001841376496789356,
+        "std": 0.000491024925384712,
+        "min": 0.0011619149008765817,
+        "max": 0.002305232919752598
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.03162,
+        "std": 0.009131440193091119,
+        "min": 0.0222,
+        "max": 0.04398
+      },
+      "run_test_mse": {
+        "mean": 0.0004337529486898954,
+        "std": 0.00021240298420364156,
+        "min": 0.00021829981415066868,
+        "max": 0.0007227458991110325
+      },
+      "global_sparsity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 10150.0,
+        "std": 0.0,
+        "min": 10150.0,
+        "max": 10150.0
+      },
+      "admm_primal_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      },
+      "admm_dual_residual": {
+        "mean": null,
+        "std": null,
+        "min": null,
+        "max": null
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/asgo_l1_30000_exp2_full/2026-05-09-19_19_49",
+      "final_validation_loss": 0.00021829981415066868,
+      "best_validation_loss": 0.00012848826008848846,
+      "final_training_loss": 0.0011619149008765817,
+      "training_speed_s_per_iter": 0.04398,
+      "run_test_mse": 0.00021829981415066868,
+      "global_sparsity": 0.0,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 0,
+      "matrix_weight_nonzeros": 10150,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 0,
+          "nonzeros": 100,
+          "sparsity": 0.0
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 0,
+          "nonzeros": 2500,
+          "sparsity": 0.0
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 0,
+          "nonzeros": 50,
+          "sparsity": 0.0
+        }
+      },
+      "admm_primal_residual": null,
+      "admm_dual_residual": null
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 0.00047100914525799453,
+      "final_sample_boundary_initial_loss": 6.743690755683929e-05,
+      "final_sample_grad_cosine_internal_vs_bi": 0.6672724485397339,
+      "final_sample_grad_dot_internal_vs_bi": 0.009989412501454353
+    }
+  },
+  "ADMM-ASGO": {
+    "num_runs": 3,
+    "runs": [
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/admm_asgo_30000_exp2_full/2026-05-09-19_25_14",
+        "final_validation_loss": 0.00019508432887960225,
+        "best_validation_loss": 0.00018261562217958272,
+        "final_training_loss": 0.0004485860699787736,
+        "training_speed_s_per_iter": 0.04746,
+        "run_test_mse": 0.00019348245405126363,
+        "global_sparsity": 0.27241379310344827,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 2765,
+        "matrix_weight_nonzeros": 7385,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 12,
+            "nonzeros": 88,
+            "sparsity": 0.12
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 675,
+            "nonzeros": 1825,
+            "sparsity": 0.27
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 687,
+            "nonzeros": 1813,
+            "sparsity": 0.2748
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 717,
+            "nonzeros": 1783,
+            "sparsity": 0.2868
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 670,
+            "nonzeros": 1830,
+            "sparsity": 0.268
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 4,
+            "nonzeros": 46,
+            "sparsity": 0.08
+          }
+        },
+        "admm_primal_residual": 0.029504207894206047,
+        "admm_dual_residual": 0.00025693277711980045
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/admm_asgo_30000_exp2_full/2026-05-09-19_49_59",
+        "final_validation_loss": 0.00027719835634343326,
+        "best_validation_loss": 0.00015144466306082904,
+        "final_training_loss": 0.0006863722228445113,
+        "training_speed_s_per_iter": 0.0279,
+        "run_test_mse": 0.0002584024623502046,
+        "global_sparsity": 0.2596059113300493,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 2635,
+        "matrix_weight_nonzeros": 7515,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 17,
+            "nonzeros": 83,
+            "sparsity": 0.17
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 650,
+            "nonzeros": 1850,
+            "sparsity": 0.26
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 691,
+            "nonzeros": 1809,
+            "sparsity": 0.2764
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 646,
+            "nonzeros": 1854,
+            "sparsity": 0.2584
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 623,
+            "nonzeros": 1877,
+            "sparsity": 0.2492
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 8,
+            "nonzeros": 42,
+            "sparsity": 0.16
+          }
+        },
+        "admm_primal_residual": 0.028078531846404076,
+        "admm_dual_residual": 0.000256295723374933
+      },
+      {
+        "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/admm_asgo_30000_exp2_full/2026-05-09-20_04_45",
+        "final_validation_loss": 0.00023786707606632262,
+        "best_validation_loss": 0.00015630207781214267,
+        "final_training_loss": 0.0005366319674067199,
+        "training_speed_s_per_iter": 0.02023,
+        "run_test_mse": 0.00023812057042960078,
+        "global_sparsity": 0.26541871921182264,
+        "matrix_weight_total": 10150,
+        "matrix_weight_zeros": 2694,
+        "matrix_weight_nonzeros": 7456,
+        "layer_sparsity": {
+          "ini_net.0.weight": {
+            "total": 100,
+            "zeros": 26,
+            "nonzeros": 74,
+            "sparsity": 0.26
+          },
+          "net.0.0.weight": {
+            "total": 2500,
+            "zeros": 618,
+            "nonzeros": 1882,
+            "sparsity": 0.2472
+          },
+          "net.1.0.weight": {
+            "total": 2500,
+            "zeros": 690,
+            "nonzeros": 1810,
+            "sparsity": 0.276
+          },
+          "net.2.0.weight": {
+            "total": 2500,
+            "zeros": 666,
+            "nonzeros": 1834,
+            "sparsity": 0.2664
+          },
+          "net.3.0.weight": {
+            "total": 2500,
+            "zeros": 692,
+            "nonzeros": 1808,
+            "sparsity": 0.2768
+          },
+          "out_net.weight": {
+            "total": 50,
+            "zeros": 2,
+            "nonzeros": 48,
+            "sparsity": 0.04
+          }
+        },
+        "admm_primal_residual": 0.02986735850572586,
+        "admm_dual_residual": 0.0002605952904559672
+      }
+    ],
+    "aggregate": {
+      "final_validation_loss": {
+        "mean": 0.0002367165870964527,
+        "std": 3.3532780928866634e-05,
+        "min": 0.00019508432887960225,
+        "max": 0.00027719835634343326
+      },
+      "best_validation_loss": {
+        "mean": 0.00016345412101751813,
+        "std": 1.3693574274196912e-05,
+        "min": 0.00015144466306082904,
+        "max": 0.00018261562217958272
+      },
+      "final_training_loss": {
+        "mean": 0.0005571967534100016,
+        "std": 9.815887272237992e-05,
+        "min": 0.0004485860699787736,
+        "max": 0.0006863722228445113
+      },
+      "training_speed_s_per_iter": {
+        "mean": 0.031863333333333334,
+        "std": 0.011464415476692311,
+        "min": 0.02023,
+        "max": 0.04746
+      },
+      "run_test_mse": {
+        "mean": 0.00023000182894368967,
+        "std": 2.711810393900394e-05,
+        "min": 0.00019348245405126363,
+        "max": 0.0002584024623502046
+      },
+      "global_sparsity": {
+        "mean": 0.2658128078817734,
+        "std": 0.005236216082260108,
+        "min": 0.2596059113300493,
+        "max": 0.27241379310344827
+      },
+      "matrix_weight_nonzeros": {
+        "mean": 7452.0,
+        "std": 53.147593234940246,
+        "min": 7385.0,
+        "max": 7515.0
+      },
+      "admm_primal_residual": {
+        "mean": 0.02915003274877866,
+        "std": 0.0007720342088724509,
+        "min": 0.028078531846404076,
+        "max": 0.02986735850572586
+      },
+      "admm_dual_residual": {
+        "mean": 0.00025794126365023356,
+        "std": 1.8946157187544117e-06,
+        "min": 0.000256295723374933,
+        "max": 0.0002605952904559672
+      }
+    },
+    "representative_best_run": {
+      "project_path": "PINN_trained/Burgers/Experiment2_ADMM_ASGO/admm_asgo_30000_exp2_full/2026-05-09-19_25_14",
+      "final_validation_loss": 0.00019508432887960225,
+      "best_validation_loss": 0.00018261562217958272,
+      "final_training_loss": 0.0004485860699787736,
+      "training_speed_s_per_iter": 0.04746,
+      "run_test_mse": 0.00019348245405126363,
+      "global_sparsity": 0.27241379310344827,
+      "matrix_weight_total": 10150,
+      "matrix_weight_zeros": 2765,
+      "matrix_weight_nonzeros": 7385,
+      "layer_sparsity": {
+        "ini_net.0.weight": {
+          "total": 100,
+          "zeros": 12,
+          "nonzeros": 88,
+          "sparsity": 0.12
+        },
+        "net.0.0.weight": {
+          "total": 2500,
+          "zeros": 675,
+          "nonzeros": 1825,
+          "sparsity": 0.27
+        },
+        "net.1.0.weight": {
+          "total": 2500,
+          "zeros": 687,
+          "nonzeros": 1813,
+          "sparsity": 0.2748
+        },
+        "net.2.0.weight": {
+          "total": 2500,
+          "zeros": 717,
+          "nonzeros": 1783,
+          "sparsity": 0.2868
+        },
+        "net.3.0.weight": {
+          "total": 2500,
+          "zeros": 670,
+          "nonzeros": 1830,
+          "sparsity": 0.268
+        },
+        "out_net.weight": {
+          "total": 50,
+          "zeros": 4,
+          "nonzeros": 46,
+          "sparsity": 0.08
+        }
+      },
+      "admm_primal_residual": 0.029504207894206047,
+      "admm_dual_residual": 0.00025693277711980045
+    },
+    "representative_gradient_conflict": {
+      "final_sample_internal_loss": 0.00043836553231813014,
+      "final_sample_boundary_initial_loss": 0.0001031064020935446,
+      "final_sample_grad_cosine_internal_vs_bi": 0.3964223861694336,
+      "final_sample_grad_dot_internal_vs_bi": 0.00736403651535511
+    }
+  }
+}
