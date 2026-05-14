@@ -8,7 +8,7 @@
         "best_validation_loss": 0.00015256104234140366,
         "final_training_loss": 6.318923988146707e-05,
         "training_speed_s_per_iter": 0.01337,
-        "run_test_mse": 0.00017297867452725768
+        "run_test_mse": 0.00017297882004640996
       },
       {
         "project_path": "PINN_trained/Burgers/Report/standard_30000_full/2026-05-09-00_35_24",
@@ -16,7 +16,7 @@
         "best_validation_loss": 0.00013832711556460708,
         "final_training_loss": 6.612564175156876e-05,
         "training_speed_s_per_iter": 0.01304,
-        "run_test_mse": 0.00015222455840557814
+        "run_test_mse": 0.00015222447109408677
       },
       {
         "project_path": "PINN_trained/Burgers/Report/standard_30000_full/2026-05-09-00_46_10",
@@ -24,7 +24,7 @@
         "best_validation_loss": 0.00014859996736049652,
         "final_training_loss": 0.00014033076877240092,
         "training_speed_s_per_iter": 0.01121,
-        "run_test_mse": 0.0001787813234841451
+        "run_test_mse": 0.00017878125072456896
       }
     ],
     "aggregate": {
@@ -53,10 +53,10 @@
         "max": 0.01337
       },
       "run_test_mse": {
-        "mean": 0.00016799485213899365,
-        "std": 1.1400125936669002e-05,
-        "min": 0.00015222455840557814,
-        "max": 0.0001787813234841451
+        "mean": 0.00016799484728835523,
+        "std": 1.1400164455693093e-05,
+        "min": 0.00015222447109408677,
+        "max": 0.00017878125072456896
       }
     },
     "representative_best_run": {
@@ -65,13 +65,13 @@
       "best_validation_loss": 0.00013832711556460708,
       "final_training_loss": 6.612564175156876e-05,
       "training_speed_s_per_iter": 0.01304,
-      "run_test_mse": 0.00015222455840557814
+      "run_test_mse": 0.00015222447109408677
     },
     "representative_gradient_conflict": {
-      "final_sample_internal_loss": 6.09444068686571e-05,
-      "final_sample_boundary_initial_loss": 9.150272489932831e-06,
-      "final_sample_grad_cosine_internal_vs_bi": -0.0581374354660511,
-      "final_sample_grad_dot_internal_vs_bi": -0.00016269972547888756
+      "final_sample_internal_loss": 6.094287527957931e-05,
+      "final_sample_boundary_initial_loss": 9.150340702035464e-06,
+      "final_sample_grad_cosine_internal_vs_bi": -0.0581294447183609,
+      "final_sample_grad_dot_internal_vs_bi": -0.00016267944010905921
     }
   },
   "PCGrad": {
@@ -83,7 +83,7 @@
         "best_validation_loss": 0.00013174601190257818,
         "final_training_loss": 6.467156345024705e-05,
         "training_speed_s_per_iter": 0.02246,
-        "run_test_mse": 0.000157073067384772
+        "run_test_mse": 0.0001570729655213654
       },
       {
         "project_path": "PINN_trained/Burgers/Report/pcgrad_30000_full/2026-05-09-00_36_42",
@@ -91,7 +91,7 @@
         "best_validation_loss": 0.00013478269102051854,
         "final_training_loss": 8.54842146509327e-05,
         "training_speed_s_per_iter": 0.02117,
-        "run_test_mse": 0.00016140713705681264
+        "run_test_mse": 0.00016140704974532127
       },
       {
         "project_path": "PINN_trained/Burgers/Report/pcgrad_30000_full/2026-05-09-00_48_13",
@@ -99,7 +99,7 @@
         "best_validation_loss": 0.00013521524670068175,
         "final_training_loss": 0.00035967142321169376,
         "training_speed_s_per_iter": 0.01545,
-        "run_test_mse": 0.00020732796110678464
+        "run_test_mse": 0.00020732769917231053
       }
     ],
     "aggregate": {
@@ -128,10 +128,10 @@
         "max": 0.02246
       },
       "run_test_mse": {
-        "mean": 0.0001752693885161231,
-        "std": 2.273778202894267e-05,
-        "min": 0.000157073067384772,
-        "max": 0.00020732796110678464
+        "mean": 0.0001752692381463324,
+        "std": 2.273770384230716e-05,
+        "min": 0.0001570729655213654,
+        "max": 0.00020732769917231053
       }
     },
     "representative_best_run": {
@@ -140,13 +140,13 @@
       "best_validation_loss": 0.00013174601190257818,
       "final_training_loss": 6.467156345024705e-05,
       "training_speed_s_per_iter": 0.02246,
-      "run_test_mse": 0.000157073067384772
+      "run_test_mse": 0.0001570729655213654
     },
     "representative_gradient_conflict": {
-      "final_sample_internal_loss": 6.385448796208948e-05,
-      "final_sample_boundary_initial_loss": 5.866565970791271e-06,
-      "final_sample_grad_cosine_internal_vs_bi": 0.028979800641536713,
-      "final_sample_grad_dot_internal_vs_bi": 2.9359202017076313e-05
+      "final_sample_internal_loss": 6.385357119143009e-05,
+      "final_sample_boundary_initial_loss": 5.866594165127026e-06,
+      "final_sample_grad_cosine_internal_vs_bi": 0.02897493727505207,
+      "final_sample_grad_dot_internal_vs_bi": 2.9359232939896174e-05
     }
   },
   "ConFIG": {
@@ -158,7 +158,7 @@
         "best_validation_loss": 0.00013103123637847602,
         "final_training_loss": 0.0001809820532798767,
         "training_speed_s_per_iter": 0.0237,
-        "run_test_mse": 0.00015605126100126654
+        "run_test_mse": 0.0001560512464493513
       },
       {
         "project_path": "PINN_trained/Burgers/Report/config_30000_full/2026-05-09-00_37_21",
@@ -166,7 +166,7 @@
         "best_validation_loss": 0.00013224693248048425,
         "final_training_loss": 9.552329720463604e-05,
         "training_speed_s_per_iter": 0.02229,
-        "run_test_mse": 0.00016092909208964556
+        "run_test_mse": 0.0001609289029147476
       },
       {
         "project_path": "PINN_trained/Burgers/Report/config_30000_full/2026-05-09-00_49_27",
@@ -174,7 +174,7 @@
         "best_validation_loss": 0.0001320034498348832,
         "final_training_loss": 0.00011019989324267954,
         "training_speed_s_per_iter": 0.015,
-        "run_test_mse": 0.00014849929721094668
+        "run_test_mse": 0.00014849936997052282
       }
     ],
     "aggregate": {
@@ -203,10 +203,10 @@
         "max": 0.0237
       },
       "run_test_mse": {
-        "mean": 0.00015515988343395293,
-        "std": 5.11343756894614e-06,
-        "min": 0.00014849929721094668,
-        "max": 0.00016092909208964556
+        "mean": 0.00015515983977820724,
+        "std": 5.113333986934706e-06,
+        "min": 0.00014849936997052282,
+        "max": 0.0001609289029147476
       }
     },
     "representative_best_run": {
@@ -215,13 +215,13 @@
       "best_validation_loss": 0.0001320034498348832,
       "final_training_loss": 0.00011019989324267954,
       "training_speed_s_per_iter": 0.015,
-      "run_test_mse": 0.00014849929721094668
+      "run_test_mse": 0.00014849936997052282
     },
     "representative_gradient_conflict": {
-      "final_sample_internal_loss": 8.461999823339283e-05,
-      "final_sample_boundary_initial_loss": 3.816128810285591e-06,
-      "final_sample_grad_cosine_internal_vs_bi": -0.26201215386390686,
-      "final_sample_grad_dot_internal_vs_bi": -0.001011737622320652
+      "final_sample_internal_loss": 8.461894321953878e-05,
+      "final_sample_boundary_initial_loss": 3.816235675913049e-06,
+      "final_sample_grad_cosine_internal_vs_bi": -0.2620069682598114,
+      "final_sample_grad_dot_internal_vs_bi": -0.0010117203928530216
     }
   },
   "M-ConFIG": {
@@ -233,7 +233,7 @@
         "best_validation_loss": 0.00012215178867336363,
         "final_training_loss": 0.00010807272337842733,
         "training_speed_s_per_iter": 0.01369,
-        "run_test_mse": 0.00015338766388595104
+        "run_test_mse": 0.00015338764933403581
       },
       {
         "project_path": "PINN_trained/Burgers/Report/mconfig_30000_full/2026-05-09-00_32_12",
@@ -249,7 +249,7 @@
         "best_validation_loss": 0.00013191052130423486,
         "final_training_loss": 0.00016375853738281876,
         "training_speed_s_per_iter": 0.0135,
-        "run_test_mse": 0.00016689542098902166
+        "run_test_mse": 0.00016689546464476734
       }
     ],
     "aggregate": {
@@ -278,10 +278,10 @@
         "max": 0.01382
       },
       "run_test_mse": {
-        "mean": 0.0001571421162225306,
-        "std": 6.957228775203527e-06,
+        "mean": 0.0001571421259238074,
+        "std": 6.9572517931034695e-06,
         "min": 0.0001511432637926191,
-        "max": 0.00016689542098902166
+        "max": 0.00016689546464476734
       }
     },
     "representative_best_run": {
@@ -293,10 +293,10 @@
       "run_test_mse": 0.0001511432637926191
     },
     "representative_gradient_conflict": {
-      "final_sample_internal_loss": 0.00014977560203988105,
-      "final_sample_boundary_initial_loss": 3.7415559290820966e-06,
-      "final_sample_grad_cosine_internal_vs_bi": 0.6343553066253662,
-      "final_sample_grad_dot_internal_vs_bi": 0.0018994680140167475
+      "final_sample_internal_loss": 0.00014977263344917446,
+      "final_sample_boundary_initial_loss": 3.7416334635054227e-06,
+      "final_sample_grad_cosine_internal_vs_bi": 0.6343560814857483,
+      "final_sample_grad_dot_internal_vs_bi": 0.0018994401907548308
     }
   }
 }

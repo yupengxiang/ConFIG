@@ -1,7 +1,0 @@
-mkdocs
-black
-mkdocs-material
-mkdocstrings
-mkdocstrings-python
-#mknotebooks
-mkdocs-jupyter

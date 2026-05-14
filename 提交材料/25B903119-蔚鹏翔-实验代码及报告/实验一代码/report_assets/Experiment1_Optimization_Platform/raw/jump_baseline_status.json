@@ -1,0 +1,37 @@
+{
+  "jump_available": true,
+  "jump_result": {
+    "objective": 1.3288608467480825e-28,
+    "primal_status": "FEASIBLE_POINT",
+    "termination_status": "LOCALLY_SOLVED",
+    "x": 0.9999999999999899,
+    "y": 0.9999999999999792
+  },
+  "analytic_result": {
+    "x": [
+      1.0,
+      1.0
+    ],
+    "objective": 0.0,
+    "source": "analytic"
+  },
+  "scipy_result": {
+    "x": [
+      0.999999999999463,
+      0.9999999999988877
+    ],
+    "objective": 4.350946175749837e-25,
+    "success": true,
+    "message": "Optimization terminated successfully.",
+    "iterations": 34
+  },
+  "selected_baseline": {
+    "x": [
+      0.9999999999999899,
+      0.9999999999999792
+    ],
+    "objective": 1.3288608467480825e-28,
+    "source": "JuMP/Ipopt"
+  },
+  "notes": "******************************************************************************\nThis program contains Ipopt, a library for large-scale nonlinear optimization.\n Ipopt is released as open source code under the Eclipse Public License (EPL).\n         For more information visit https://github.com/coin-or/Ipopt\n******************************************************************************\n\nJuMP Rosenbrock result written to /home/jade/Projects/ConFIG/report_assets/Experiment1_Optimization_Platform/raw/jump_rosenbrock.json"
+}

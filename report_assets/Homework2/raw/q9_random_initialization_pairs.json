@@ -2,8 +2,8 @@
   {
     "run_a": "2026-05-09-00_24_28",
     "run_b": "2026-05-09-00_35_24",
-    "parameter_l2_distance": "26.49199867",
-    "parameter_cosine_similarity": "-0.003578615841",
+    "parameter_l2_distance": "26.49199677",
+    "parameter_cosine_similarity": "-0.003578621428",
     "prediction_mse": "1.141830944e-05",
     "test_mse_run_a": "0.00017297882",
     "test_mse_run_b": "0.0001522244711"
@@ -11,8 +11,8 @@
   {
     "run_a": "2026-05-09-00_24_28",
     "run_b": "2026-05-09-00_46_10",
-    "parameter_l2_distance": "26.01350975",
-    "parameter_cosine_similarity": "0.01701289974",
+    "parameter_l2_distance": "26.01351357",
+    "parameter_cosine_similarity": "0.01701290719",
     "prediction_mse": "1.375232114e-05",
     "test_mse_run_a": "0.00017297882",
     "test_mse_run_b": "0.0001787812507"

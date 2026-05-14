@@ -1,121 +1,148 @@
-<h1 align="center">
-  <img src="./docs/assets/config.png" width="400"/>
-</h1>
+# 课程提交版说明
 
-<h4 align="center">Official implementation of Conflict-Free Inverse Gradients Method [ICLR2025 Spotlight]</h4>
-<h6 align="center">Towards Conflict-free Training for Everything and Everyone!</h6>
+这个仓库包含以下 4 个交付物相关的代码、数据、训练结果和报告资产：
 
-<p align="center">
-  [<a href="https://arxiv.org/abs/2408.11104">📄 Research Paper</a>]•[<a href="https://tum-pbs.github.io/ConFIG/">📖 Documentation & Examples</a>]
-</p>
+- 作业 2
+- 实验 1：Python-Julia 混合优化算法平台
+- 实验 2：结合 ADMM 与 ASGO 的稀疏 PINN 优化实验
+- 阅读报告：ConFIG 阅读报告复现
 
-## News
-Recently, the ConFIG method has also been applied to train physics-constrained generative models:
+如果只需要查看结果，可以直接打开各任务对应的 PDF 和图表；如果需要复现实验结果，也可以按下面的入口脚本重新运行分析或重建报告。
 
-* Flow Matching Meets PDEs: A Unified Framework for Physics-Constrained Generation, Giacomo Baldan, Qiang Liu, Alberto Guardone, Nils Thuerey, https://arxiv.org/abs/2506.08604
+## 目录总览
 
-* Guiding diffusion models to reconstruct flow fields from sparse data, Marc Amorós-Trepat, Luis Medrano-Navarro, Qiang Liu, Luca Guastoni, Nils Thuerey, https://arxiv.org/abs/2506.11908
+- `tools/Homework2/`：作业 2 的代码入口
+- `tools/Experiment1_Optimization_Platform/`：实验 1 的代码入口和详细说明
+- `tools/Experiment2_ADMM_ASGO/`：实验 2 的训练、分析、报告构建入口和详细说明
+- `tools/Report/`：阅读报告的训练、分析、报告构建入口和详细说明
+- `report_assets/`：各任务生成的图表、表格、原始 JSON/CSV
+- `Latex/`：各任务的 Markdown、LaTeX 和最终 PDF
+- `PINN_trained/Burgers/`：实验 2 与阅读报告所需的已训练 Burgers PINN 结果
+- `conflictfree/`、`experiments/PINN/`、`external/ASGO/`：实验 2 与阅读报告运行所需的底层代码
 
-## About
+## 环境准备
 
-* **What is the ConFIG method?**
+### 通用 Python 环境
 
-​	The conFIG method is a generic method for optimization problems involving **multiple loss terms** (e.g., Multi-task Learning, Continuous Learning, and Physics Informed Neural Networks). It prevents the optimization from getting stuck into a local minimum of a specific loss term due to the conflict between losses. On the contrary, it leads the optimization to the **shared minimum of all losses** by providing a **conflict-free update direction.**
+作业 2、实验 2 和阅读报告共用一套 Python 依赖思路。建议使用 Python 3.10，并在仓库根目录安装：
 
-<p align="center">
-<img src="docs/assets/config_illustration.png" style="zoom: 33%;" />
-</p>
-
-* **How does the ConFIG work?**
-
-​	The ConFIG method obtains the conflict-free direction by calculating the inverse of the loss-specific gradients matrix:
-
-```math
-\boldsymbol{g}_{ConFIG}=\left(\sum_{i=1}^{m} \boldsymbol{g}_{i}^\top\boldsymbol{g}_{u}\right)\boldsymbol{g}_u,
+```bash
+pip install -e .
+pip install torch numpy scipy matplotlib tensorboard pyyaml einops tqdm
 ```
 
-```math
-\boldsymbol{g}_u = \mathcal{U}\left[
-[\mathcal{U}(\boldsymbol{g}_1),\mathcal{U}(\boldsymbol{g}_2),\cdots, \mathcal{U}(\boldsymbol{g}_m)]^{-\top} \mathbf{1}_m\right].
+### 实验 1 环境
+
+实验 1 单独提供了 conda 环境文件：
+
+```bash
+conda env create -f tools/Experiment1_Optimization_Platform/environment.yml
+conda activate config-exp1
 ```
 
-Then the dot product between $\boldsymbol{g}_{ConFIG}$ and each loss-specific gradient is always positive and equal, i.e., $`\boldsymbol{g}_{i}^{\top}\boldsymbol{g}_{ConFIG}=\boldsymbol{g}_{j}^{\top}\boldsymbol{g}_{ConFIG}> 0  \quad \forall i,j \in [1,m]`$​.
+### LaTeX 环境
 
-* **Is the ConFIG computationally expensive?**
+如果需要重新生成 PDF，请确保系统安装了 `xelatex`；作业 2 也可以使用 `latexmk -xelatex`。
 
-​	Like many other gradient-based methods, ConFIG needs to calculate each loss's gradient in every optimization iteration, which could be computationally expensive when the number of losses increases. However, we also introduce a **momentum-based method** where we can reduce the computational cost **close to or even lower than a standard optimization procedure** with a slight degeneration in accuracy. This momentum-based method is also applicable to other gradient-based methods.
+## 作业 2
 
-## Paper Info
+作业 2 的代码位于 `tools/Homework2/`，其中有两个入口：
 
-<h4 align="center">ConFIG: Towards Conflict-free Training of Physics Informed Neural Networks</h4>
-<h6 align="center"><img src="./docs/assets/TUM.svg" width="16"> <a href="https://qiauil.github.io/">Qiang Liu</a>, <img src="./docs/assets/PKU.svg" width="14"> <a href="https://rachelcmy.github.io/">Mengyu Chu</a>, and <img src="./docs/assets/TUM.svg" width="16"> <a href="https://ge.in.tum.de/about/n-thuerey/">Nils Thuerey</a></h6>
+- `tools/Homework2/run_core_tasks.py`：生成基础数值结果、表格和部分原始输出
+- `tools/Homework2/run_report_tasks.py`：生成报告中与深度学习优化、PINN 参数轨迹、线性方程求解相关的图表与表格
 
-<h6 align="center">
-    <img src="./docs/assets/TUM.svg" width="16"> Technical University of Munich
-    <img src="./docs/assets/PKU.svg" width="14"> Peking University
-</h6>
+运行方式：
 
-***Abstract:*** The loss functions of many learning problems contain multiple additive terms that can disagree and yield conflicting update directions. For Physics-Informed Neural Networks (PINNs), loss terms on initial/boundary conditions and physics equations are particularly interesting as they are well-established as highly difficult tasks. To improve learning the challenging multi-objective task posed by PINNs, we propose the ConFIG method, which provides conflict-free updates by ensuring a positive dot product between the final update and each loss-specific gradient. It also maintains consistent optimization rates for all loss terms and dynamically adjusts gradient magnitudes based on conflict levels. We additionally leverage momentum to accelerate optimizations by alternating the back-propagation of different loss terms. The proposed method is evaluated across a range of challenging PINN scenarios, consistently showing superior performance and runtime compared to baseline methods. We also test the proposed method in a classic multi-task benchmark, where the ConFIG method likewise exhibits a highly promising performance. 
-
-***Read from:*** [[Arxiv](https://arxiv.org/abs/2408.11104)]
-
-***Cite as:*** 
-
-```latex
-@inproceedings{Liu2024ConFIG,
-  author = {Qiang Liu and Mengyu Chu and Nils Thuerey},
-  title = {ConFIG: Towards Conflict-free Training of Physics Informed Neural Networks},
-  booktitle = {The Thirteenth International Conference on Learning Representations},
-  year={2024},
-  url={https://arxiv.org/abs/2408.11104},
-}
+```bash
+python3 tools/Homework2/run_core_tasks.py
+python3 tools/Homework2/run_report_tasks.py --device cpu
 ```
 
-## Installation
+输出位置：
 
-* Install through `pip`: `pip install conflictfree`
-* Install from repository online: `pip install git+https://github.com/tum-pbs/ConFIG`
-* Install from repository offline: Download the repository and run `pip install .` or `install.sh` in terminal.
-* Install from released wheel: Download the wheel and run `pip install conflictfree-x.x.x-py3-none-any.whl` in terminal.
+- `report_assets/Homework2/`
+- `Latex/Homework2/`
 
-## Usage
+最终报告文件：
 
-For a muti-loss optimization, you can simply use ConFIG method as follows:
+- `Latex/Homework2/homework2_report.pdf`
+- `Latex/Homework2/作业2.pdf`
 
-Without `ConFIG`:
+注意：`run_report_tasks.py` 会直接读取 `PINN_trained/Burgers/Report/` 下的已训练模型、中间 checkpoint 和 `experiments/PINN/data/burgers/simulation_data.npy`，因此这些目录属于作业 2 的必需依赖。
 
-```python
-optimizer=torch.Adam(network.parameters(),lr=1e-3)
-for input_i in dataset:
-    losses=[]
-    optimizer.zero_grad()
-    for loss_fn in loss_fns:
-        losses.append(loss_fn(network,input_i))
-    torch.cat(losses).sum().backward()
-    optimizer.step()
+## 实验 1
+
+实验 1 的详细说明在：
+
+- `tools/Experiment1_Optimization_Platform/README.md`
+
+主入口：
+
+```bash
+conda run -n config-exp1 python tools/Experiment1_Optimization_Platform/run_all.py
 ```
 
-With `ConFIG`:
+输出位置：
 
-```python
-from conflictfree.grad_operator import ConFIG_update
-from conflictfree.utils import get_gradient_vector,apply_gradient_vector
-optimizer=torch.Adam(network.parameters(),lr=1e-3)
-for input_i in dataset:
-    grads=[]
-    for loss_fn in loss_fns:
-    	optimizer.zero_grad()
-    	loss_i=loss_fn(input_i)
-        loss_i.backward()
-        grads.append(get_gradient_vector(network)) #get loss-specfic gradient
-    g_config=ConFIG_update(grads) # calculate the conflict-free direction
-    apply_gradient_vector(network,g_config) # set the conflict-free direction to the network
-    optimizer.step()
-```
+- `report_assets/Experiment1_Optimization_Platform/`
+- `Latex/Experiment1_Optimization_Platform/`
 
-More details and examples can be found in our [doc page](https://tum-pbs.github.io/ConFIG/).
+最终报告文件：
 
-To reproduce the result in our paper, please check the [experiments](https://github.com/tum-pbs/ConFIG/tree/main/experiments) folder.
+- `Latex/Experiment1_Optimization_Platform/experiment1_optimization_platform.pdf`
 
-## Additional Info
-This project is part of the physics-based deep learning topic in [**Physics-based Simulation group**](https://ge.in.tum.de/) at TUM.
+## 实验 2
+
+实验 2 的详细说明在：
+
+- `tools/Experiment2_ADMM_ASGO/README_experiments.md`
+
+常用入口：
+
+- 训练：`tools/Experiment2_ADMM_ASGO/run_burgers_experiments.py`
+- 分析：`tools/Experiment2_ADMM_ASGO/analyze_burgers_results.py`
+- 生成 LaTeX/PDF：`tools/Experiment2_ADMM_ASGO/build_experiment2_latex.py`
+
+输出位置：
+
+- 训练结果：`PINN_trained/Burgers/Experiment2_ADMM_ASGO/`
+- 图表和统计：`report_assets/Experiment2_ADMM_ASGO/`
+- 报告：`Latex/Experiment2_ADMM_ASGO/`
+
+最终报告文件：
+
+- `Latex/Experiment2_ADMM_ASGO/experiment2_admm_asgo.pdf`
+
+说明：实验 2 除了依赖 `experiments/PINN/` 和 `conflictfree/`，还会通过 `experiments/PINN/lib_pinns/sparse_trainers.py` 使用 `external/ASGO/` 中的外部 ASGO 实现。
+
+## 阅读报告
+
+阅读报告的详细说明在：
+
+- `tools/Report/README_experiments.md`
+- `Latex/ConFIG_Report/README.md`
+
+常用入口：
+
+- 训练：`tools/Report/run_burgers_experiments.py`
+- 分析：`tools/Report/analyze_burgers_results.py`
+- 生成 LaTeX：`tools/Report/build_latex_report.py`
+
+输出位置：
+
+- 训练结果：`PINN_trained/Burgers/Report/`
+- 图表和统计：`report_assets/Report/`
+- 报告：`Latex/ConFIG_Report/`
+
+最终报告文件：
+
+- `Latex/ConFIG_Report/config_report.pdf`
+
+## 建议的复现顺序
+
+如果希望验证“结果能否重新整理出来”，建议按下面顺序执行：
+
+1. 直接查看 `Latex/` 下的 4 份 PDF。
+2. 如需重建图表，先运行各任务分析脚本，输出会写回 `report_assets/`。
+3. 如需重建 LaTeX/PDF，再运行各任务的 LaTeX 构建脚本。
+4. 只有在需要重新训练 PINN 时，才运行实验 2 或阅读报告的训练脚本。
